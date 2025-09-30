@@ -1,9 +1,17 @@
-import { createAnimations } from '@tamagui/animations-react-native';
-import { createInterFont } from '@tamagui/font-inter';
-import { createMedia } from '@tamagui/react-native-media-driver';
-import { shorthands } from '@tamagui/shorthands';
-import { themes, tokens } from '@tamagui/themes';
-import { createTamagui, styled, SizableText, H1, YStack, Input, createTokens } from 'tamagui';
+import { createAnimations } from '@tamagui/animations-react-native'
+import { createInterFont } from '@tamagui/font-inter'
+import { createMedia } from '@tamagui/react-native-media-driver'
+import { shorthands } from '@tamagui/shorthands'
+import { themes, tokens } from '@tamagui/themes'
+import {
+  createTamagui,
+  styled,
+  SizableText,
+  H1,
+  YStack,
+  Input,
+  createTokens,
+} from 'tamagui'
 
 const animations = createAnimations({
   bouncy: {
@@ -23,7 +31,7 @@ const animations = createAnimations({
     stiffness: 250,
     type: 'spring',
   },
-});
+})
 
 const token = createTokens({
   ...tokens,
@@ -40,12 +48,11 @@ const token = createTokens({
     appSecondary400: '#923d0e',
     appSecondary500: '#78320f',
   },
-});
+})
 
-const headingFont = createInterFont();
+const headingFont = createInterFont()
 
-const bodyFont = createInterFont();
-
+const bodyFont = createInterFont()
 
 const config = createTamagui({
   light: {
@@ -83,13 +90,13 @@ const config = createTamagui({
   }),
 })
 
-type AppConfig = typeof config;
+type AppConfig = typeof config
 
 // Enable auto-completion of props shorthand (ex: jc="center") for Tamagui templates.
 // Docs: https://tamagui.dev/docs/core/configuration
 
 declare module 'tamagui' {
-  interface TamaguiCustomConfig extends AppConfig { }
+  interface TamaguiCustomConfig extends AppConfig {}
 }
 
-export default config;
+export default config
