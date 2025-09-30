@@ -1,5 +1,6 @@
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from '@env';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '@env'
 
 export default {
-    SUPABASE_URL, SUPABASE_ANON_KEY
+  SUPABASE_URL,
+  SUPABASE_ANON_KEY,
 }

@@ -1,9 +1,8 @@
-import { apiario } from "./apiario"
-
+import { apiario } from './apiario'
 
 export type Produtor = {
-    municipio: string
-    estado: string
-    id: number
-    nome: string
+  municipio: string
+  estado: string
+  id: number
+  nome: string
 }

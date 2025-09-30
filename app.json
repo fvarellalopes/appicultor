@@ -53,6 +53,14 @@
           "recordAudioAndroid": true
         }
       ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#FBBA25",
+          "sounds": []
+        }
+      ],
       "expo-font"
     ],
     "extra": {

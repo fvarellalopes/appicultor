@@ -92,6 +92,13 @@ O **Appicultor** é um aplicativo móvel desenvolvido para auxiliar apicultores 
 - ✅ Sincronização automática ao recuperar conexão
 - ✅ Alertas de status de conexão
 
+### 🔔 Notificações Push
+- ✅ Sistema de notificações para alertas de visitas
+- ✅ Notificação instantânea ao cadastrar relatório
+- ✅ Lembretes agendados 24 horas antes de visitas
+- ✅ Configuração opcional por visita
+- ✅ Gerenciamento de permissões automático
+
 ### 👤 Autenticação e Usuários
 - ✅ Login seguro com Supabase Auth
 - ✅ Gestão de sessão persistente
@@ -136,6 +143,8 @@ O **Appicultor** é um aplicativo móvel desenvolvido para auxiliar apicultores 
 - **[@react-native-community/datetimepicker](https://github.com/react-native-datetimepicker/datetimepicker)** - Seleção de datas
 - **[react-native-modal-datetime-picker](https://github.com/mmazzarolo/react-native-modal-datetime-picker)** - Date picker modal
 - **[moment](https://momentjs.com/)** - Manipulação de datas
+- **[expo-notifications](https://docs.expo.dev/versions/latest/sdk/notifications/)** `0.32.11` - Sistema de notificações push
+- **[expo-device](https://docs.expo.dev/versions/latest/sdk/device/)** - Informações do dispositivo
 
 ### DevOps & Tools
 - **[ESLint](https://eslint.org/)** - Linting de código
@@ -496,7 +505,7 @@ eas build --profile production --platform ios
 ## 🎯 Melhorias Futuras
 
 ### Funcionalidades
-- [ ] Sistema de notificações push para alertas de visitas
+- [x] Sistema de notificações push para alertas de visitas ✨ **IMPLEMENTADO**
 - [ ] Relatórios com gráficos e análises estatísticas
 - [ ] Exportação de dados em PDF e Excel
 - [ ] Integração com serviços de clima
